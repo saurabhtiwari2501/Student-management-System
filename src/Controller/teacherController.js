@@ -27,6 +27,7 @@ const isValidPassword = function (password) {
 const createuser = async function (req, res) {
  
         let data = req.body
+        
         if (!isValidRequest(data)) { return res.status(400).send({message: "Student data is required" }) }
         const { name, email, password } = data
 

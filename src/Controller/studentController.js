@@ -64,8 +64,8 @@ const updateStudent = async function (req, res) {
       let { studentname, subject, marks} = data
   
   
-      if (!isValidObjectId(userId))
-        return res.status(400).send({message: "Please provide a valid userId." })
+      // if (!isValidObjectId(userId))
+      //   return res.status(400).send({message: "Please provide a valid userId." })
   
       if (studentname || studentname ==="") {
             if (!isValid(studentname))

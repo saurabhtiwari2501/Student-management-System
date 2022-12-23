@@ -9,7 +9,7 @@ const app = express()
 app.use(bodyParser.json())
 
 
-mongoose.connect("mongodb+srv://pritamsam1:Pritamsam1@project.383arvg.mongodb.net/project", {
+mongoose.connect("mongodb+srv://Saurabh2501:SAURABHtiwari2501@cluster0.kpegtjk.mongodb.net/Assign-1", {
        useNewUrlParser: true
     })
     .then( () => console.log("MongoDb is connected"))
@@ -20,4 +20,4 @@ mongoose.connect("mongodb+srv://pritamsam1:Pritamsam1@project.383arvg.mongodb.ne
 
 app.listen(3000, () => {
   console.log("Running on port 3000.")
-})
+});
